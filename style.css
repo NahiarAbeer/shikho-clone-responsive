@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 300vh;
+    transition: all 0.3s;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.pc {
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    display: flex;
+    height: 115px;
+    background: white;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+    box-shadow: 0 2px 10px -4px rgba(0, 0, 0, .6);
+}
+
+.pc nav img {
+    width: 145px;
+}
+
+.pc nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 21px 125px;
+}
+
+.pc nav span ul {
+    display: flex;
+
+}
+
+.pc nav ul li {
+    list-style: none;
+    margin: 20px;
+}
+
+.pc nav span ul li a {
+    text-decoration: none;
+    color: #868BAB;
+    font-size: medium;
+    font-weight: 700;
+}
+
+.pc nav span ul li a:hover {
+    color: #D957A6;
+}
+
+.navbar {
+    justify-self: flex-end;
+}
+
+.active {
+    color: #D957A6;
+}
+
+.log-in {
+    border: 2px solid #5468ff;
+    color: #5468ff;
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: 0.8s;
+
+}
+
+.log-in:hover {
+    color: #fff;
+    background-color: #5468ff;
+    transition: 0.8s;
+}
+
+.promo {
+    display: flex;
+    flex-direction: row;
+    background-image: url('images/bg1\(blue\).webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120vh;
+    color: #fff;
+    padding: 0 135px;
+    align-items: center;
+    background-size: cover;
+    
+}
+
+
+.promo .txt .big {
+    font-size: 48px;
+    
+}
+
+.promo .txt .small {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.link {
+    display: flex;
+}
+
+.link a {
+    text-decoration: none;
+    padding: 16px 30px;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 800;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgb(15 29 95 / 40%);
+    transition: all .3s ease-in-out;
+
+}
+
+
+.link a:first-child {
+    color: #CF278D;
+    background-color: #fff;
+    margin-right: 30px;
+
+}
+
+.link a:first-child:hover {
+    color: #5468ff;
+}
+
+.link a:last-child {
+    background-color: #CF278D;
+    color: #fff;
+}
+
+.link a:last-child:hover {
+    background-color: #5468ff;
+}
+
+.f {
+    display: flex;
+    justify-content: center;
+    top: -100px;
+    position: relative;
+    z-index: 81;
+}
+
+.f .floating {
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    align-items: center;
+
+    background: #fff;
+    height: 200px;
+    box-shadow: 0 6px 20px rgb(15 29 95 / 40%);
+    border-radius: 25px;
+}
+
+.floating .box span:first-child {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.floating .box span:last-child {
+    color: #454c7e;
+    font-size: 20px;
+}
+
+.course {
+    height: 90vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    top: -100px;
+    position: relative;
+    margin: 0 125px;
+}
+
+.course .txt {
+    top: -50px;
+    position: relative;
+    text-align: center;
+}
+
+.course .txt .big {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #354895;
+
+}
+
+.course .txt .small {
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.course .box {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.course .box .pics {
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgb(15 29 95 / 40%);
+    width: 260px;
+    height: 225px;
+    padding: 20px 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    border-radius: 20px;
+    transition-delay: 1s;
+    transition: all 1.5s ease-in-out;
+}
+
+.course .box .pics:hover {
+    transform: translateY(-60px);
+    rotate: 360deg;
+    scale: 150%;
+    transform-origin: top;
+    transition: all 1.5s ease-in-out;
+}
+
+.course .box .pics img {
+    position: relative;
+}
+
+.course .box .pics:first-child {
+    margin-left: 0h;
+    background: linear-gradient(180deg, #2dadf5 -16.22%, #2e46ff 204.73%);
+}
+
+.course .box .pics:nth-child(2) {
+    background: linear-gradient(169.45deg, #c84bae -16.18%, #6343a6 196.48%);
+}
+
+.course .box .pics:nth-child(3) {
+    background: linear-gradient(217.75deg, #d54a5d -2.41%, #aa4335 108.91%);
+}
+
+.course .box .pics:last-child {
+    background: linear-gradient(1turn, #068c82 -56.33%, #39b8b4 151.81%);
+    filter: grayscale(5);
+    opacity: .4;
+    cursor: none;
+    pointer-events: none;
+}
+
+.course .box .pics a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.course .box .pics a p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.sign-in {
+    height: 100vh;
+    width: 100vw;
+    padding: 90px 0;
+    background: linear-gradient(0deg, #354895, #354895), linear-gradient(101.56deg, #354895 -1.23%, #bf2b83 138.06%);
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+
+.sign-in .inp {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in .inp form h2 {
+    font-weight: 700;
+    color: #343b6d;
+}
+
+.sign-in .inp form {
+    position: relative;
+    height: 70vh;
+    width: 30vw;
+    border-radius: 25px;
+    padding: 30px 60px;
+    background-color: #F3F5F9;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in .inp form input {
+    margin: 25px 0;
+    height: 50px;
+    padding: 10px;
+    outline: red;
+    border: 1px solid #d0deef;
+    box-sizing: border-box;
+    border-radius: 15px;
+    transition: all .3s ease-in;
+}
+
+.sign-in .inp form input:focus {
+    border: 1px solid #cf278d;
+    transition: all .3s ease-in;
+}
+
+.sign-in .inp form button {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 60px;
+    background: #475DFF;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 30px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.sign-in .img {
+    width: 50vw;
+}
+
+.sign-in .img img {
+    width: 100%;
+}
+
+.mobile-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #354895;
+    z-index: 9999999;
+    transition: all .4s ease-in-out;
+    transform: translateX(100%);
+    place-content: center;
+}
+
+.mobile-navigation .cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.mobile-navigation .cont ul {
+    margin: auto;
+}
+
+.mobile-navigation.active {
+    transform: translateX(0);
+}
+
+.mobile-navigation button {
+    background: none;
+    border: none;
+    outline: none;
+    height: 80px;
+    width: 80px;
+}
+
+.classic {
+    display: none;
+}
+
+/* now there is responsive part  */
+@media screen and (max-width: 1256px) { 
+    .pc {
+        display: none;
+    }
+
+    .mobile-navigation {
+        display: flex;
+    }
+
+    .classic {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .classic span img {
+        width: 200px;
+    }
+
+    .classic span button {
+        width: 60px;
+        height: 80px;
+        color: black;
+        background: none;
+        border: none;
+        outline: none;
+    }
+
+    .classic span button i {
+        font-size: 32px;
+    }
+
+    .promo {
+        max-height: 130vh;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .txt {
+        position: relative;
+        text-align: center;
+        top: 70px;
+    }
+
+    .promo .txt .big {
+        font-size: 32px;
+    }
+
+    .promo .txt .small {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .link {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .link a:first-child {
+        margin-right: 0;
+
+    }
+    .link a {
+        margin: 20px 0;
+        text-align: center;
+    }
+    .promo {
+        padding: 0 10px;
+
+    }
+    .promo .pic {
+        bottom: 50px;
+        position: relative;
+    }
+    .promo .pic img{
+        width: 100vw;
+
+    }
+
+    .f {
+        margin-top: 50px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .f .floating {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        background: none;
+        box-shadow: none;
+        margin: 50px 0;
+        text-align: start;
+    }
+
+    .f .floating .box span:first-child {
+        font-size: 32px;
+    }
+
+    .course {
+        height: 120vh;
+        place-items: center;
+        height: auto;
+        top: 30px;
+    }
+
+    .course .box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        
+    }
+
+    .course .box .pics a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .course .box .pics {
+        cursor: pointer;
+        box-shadow: 0 6px 20px rgb(15 29 95 / 40%);
+        width: auto;
+        height: auto;
+        margin: 0;
+        border-radius: 7px;
+        transition-delay: 1s;
+        transition: all 1.5s ease-in-out;
+    }
+    .sign-in {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .sign-in .inp {
+        width: 100%;
+    }
+    .sign-in img {
+        display: none;
+    }
+} 
