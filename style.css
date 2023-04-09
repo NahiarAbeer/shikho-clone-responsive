@@ -7,6 +7,8 @@ body {
     font-family: 'Poppins', sans-serif;
     min-height: 300vh;
     transition: all 0.3s;
+    overflow-x: hidden;
+
 }
 
 * {
@@ -56,7 +58,8 @@ body {
     font-size: medium;
     font-weight: 700;
 }
-
+.myNav .cont .opt .active,
+.pc nav span ul li .active,
 .pc nav span ul li a:hover {
     color: #D957A6;
 }
@@ -95,13 +98,13 @@ body {
     padding: 0 135px;
     align-items: center;
     background-size: cover;
-    
+
 }
 
 
 .promo .txt .big {
     font-size: 48px;
-    
+
 }
 
 .promo .txt .small {
@@ -353,7 +356,7 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     background: #354895;
     z-index: 9999999;
     transition: all .4s ease-in-out;
@@ -362,14 +365,16 @@ body {
 }
 
 .mobile-navigation .cont {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     height: 100%;
+    align-self: start;
 }
 
 .mobile-navigation .cont ul {
-    margin: auto;
+    margin-left: 20px;
+    justify-content: start;
 }
 
 .mobile-navigation.active {
@@ -380,28 +385,68 @@ body {
     background: none;
     border: none;
     outline: none;
-    height: 80px;
-    width: 80px;
+    display: inline-flex;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 32px;
+    margin: 20px 40px;
+    width: 50px;
+    height: 50px;
+    justify-self: end;
 }
 
 .classic {
     display: none;
 }
 
-/* now there is responsive part  */
-@media screen and (max-width: 1256px) { 
+@media screen and (max-width: 1230px) {
+    body {
+        
+        overflow-x:hidden ;
+    }
     .pc {
         display: none;
     }
 
     .mobile-navigation {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 1.5fr;
+        height: 100%;
+        width: 100%;
+    }
+
+    .myNav ul {
         display: flex;
+        grid-template-columns: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .myNav ul li {
+        list-style: none;
+        
+    }
+    .myNav .cont .opt .active{
+        color: #cf278d;
+    }
+
+    .myNav .opt li a {
+        text-decoration: none;
+        color: white;
+
     }
 
     .classic {
         display: flex;
         justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        z-index: 99999;
+        background: #fff;
     }
+
+
 
     .classic span img {
         width: 200px;
@@ -447,23 +492,28 @@ body {
         display: flex;
         flex-direction: column;
     }
+
     .link a:first-child {
         margin-right: 0;
 
     }
+
     .link a {
         margin: 20px 0;
         text-align: center;
     }
+
     .promo {
         padding: 0 10px;
 
     }
+
     .promo .pic {
         bottom: 50px;
         position: relative;
     }
-    .promo .pic img{
+
+    .promo .pic img {
         width: 100vw;
 
     }
@@ -500,7 +550,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 10px;
-        
+
     }
 
     .course .box .pics a {
@@ -519,15 +569,18 @@ body {
         transition-delay: 1s;
         transition: all 1.5s ease-in-out;
     }
+
     .sign-in {
         display: flex;
         flex-direction: column;
-        
+
     }
+
     .sign-in .inp {
         width: 100%;
     }
+
     .sign-in img {
         display: none;
     }
-} 
+}
