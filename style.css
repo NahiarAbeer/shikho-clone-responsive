@@ -93,7 +93,7 @@ body {
     background-image: url('images/bg1\(blue\).webp');
     background-repeat: no-repeat;
     background-position: center;
-    height: 120vh;
+    min-height: 120vh;
     color: #fff;
     padding: 0 135px;
     align-items: center;
@@ -467,6 +467,7 @@ body {
 
     .promo {
         max-height: 130vh;
+        margin-top: 120px;
         display: flex;
         flex-direction: column;
         height: auto;
